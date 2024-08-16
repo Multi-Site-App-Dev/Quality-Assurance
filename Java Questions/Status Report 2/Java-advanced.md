@@ -1,39 +1,70 @@
-Difficulty,Question,Answer
-,What methods are available in the Object class?,"`.clone`, `.hashcode`, `.equals`, `.toString`"
-,How would you clone an object?,"First, tag the class with the `Cloneable` marker interface. Next, invoke `clone()`. The clone method is declared in `java.lang.Object` and does a shallow copy."
-,What is an enhanced for loop and what is a `forEach` loop?,Enhanced for loop allows easier traversal of Collections (actually any arrays or `Iterable`s) - syntax: `for (Object o : collection) {...}`
-,What is try-with-resources? What interface must the resource implement to use this feature?,Try-with-resources allows for automatically closing resources in a try/catch block using `try(resource) {...}` syntax. Must implement the `AutoCloseable` interface
-,How to make numbers in your code more readable?,Use the `_` for numeric literals - must be placed between numbers
-,What are covariant return types?,"A method is allowed to return objects that are child classes of the return type. Also, when overriding a method, the return type of the new method can be a child class of the original return type"
-,What are 3 usages of `super` keyword?,"1. to refer to immediate parent class instance variable.
-2. `super()` is used to invoke immediate parent class constructor (also can pass params)
-3. to invoke immediate parent class method."
-,Can you overload / override a main method? static method? a private method? a default method? a protected method?,"Main method - overload, cannot override b/c is static method.
-Static method - overload, cannot override b/c belongs to class (not inherited).
-Private method - overload, cannot override b/c doesn't get inherited.
-Default method - both.
-Protected method - both (override if inherited). "
-,Difference between FileReader and BufferedReader?,"`FileReader` is just a `Reader` which reads a file, so it reads characters and uses the platform-default encoding.
-`BufferedReader` reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines (e.g. can read one line at a time).
-So you can wrap a `BufferedReader` around a `FileReader`"
-,How to pass multiple values with a single parameter into a method?,Use varargs
-,What is static block?,Used for static initialization. Executed only once - upon creation of first object of class or access to static method of class
-,What is static imports?,Importing a static method or variable from a class - syntax: import static
-,How would you clone an object?,use the `.clone()` method inherited from Object class
-,What makes a class immutable?,"1. Declare the class as `final` so it can't be extended.
-2. Make all fields private so that direct access is not allowed.
-3. Don't provide setter methods for variables.
-4. Make all mutable fields final so that it's value can be assigned only once.
-5. Initialize all the fields via a constructor performing deep copy.
-6. Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference."
-,"If two objects are equal, do they have the same hashcode? If not equal?","If two objects have the same hashcode then they are NOT necessarily equal. But if objects are equal, then they MUST have same hashcode."
-,What data types are supported in switch statements?,"`String`, `int`, `char`, `short`, `byte`, `enums`"
-,List all non-access modifiers?,"`static`, `final`, `abstract`, `default`, `synchronized`, `transient`, `volatile`, `native`, `strictfp`"
-,Which collections cannot hold null values?,"`HashTable`, `TreeSet`, `ArrayDeque`, `PriorityQueue`"
-,"If 2 interfaces have default methods and you implement both, what happens?","The code will NOT compile unless you override the method. However, the code WILL compile if one interface is implemented further up in the class hierarchy than the other - in this case, the closest method implementation in the hierarchy will be called"
-,"If 2 interfaces have same variable names and you implement both, what happens?",The code will compile unless you make a reference to the variable (this is an ambiguous reference). You must explicitly define the variable by using the interface name: `int a = INTERFACENAME.a;`
-,Why does `HashTable` not take `null` key?,"The hash table hashes the keys given as input, and the `null` value cannot be hashed"
-,What new syntax for creating variables was introduced with Java 10?,The `var` keyword was introduced - with type inference
-,Is there an interactive REPL tool for Java like there is for languages like Python?,"Yes, the `jshell` tool introduced in Java 9"
-,What are collection factory methods?,"They allow you to directly populate collections, e.g. `Set.of(1,2,3)`"
-,Multi-catch block - can you catch more than one exception in a single catch block?,"Yes, use the `|` operator"
+# QC Questions on Advanced Java
+
+ - What are static imports?
+ - Does Java employ "pass-by-value" or "pass-by-reference"?
+ - What are short-circuit boolean operators?
+ - What is the String Pool?
+ - What is the difference between String, StringBuilder, and StringBuffer?
+ - Are Java Strings thread-safe? Why?
+ - How can a String be created outside of the String Pool?
+ - What is string interning?
+ - What causes a NullPointerException?
+ - What is reflection?
+ - Why do abstract classes have constructors?
+ - What modifying keywords are implicitly applied to variable members declared within an interface?
+ - What are functional interfaces?
+ - What are marker interfaces?
+ - What are annotations used for in Java?
+ - What are default interface methods?
+ - Describe the core interface/class hierarchy of the Java Collections API
+ - What is the difference between a List and a Set?
+ - What are the characteristics of a Queue?
+ - What are the characteristics of a Stack?
+ - What is a Map? Are they considered to be a part of the Java Collection API?
+ - When would you use an ArrayList over a LinkedList?
+ - When would you use an ArrayList over a Vector?
+ - What is the difference between a HashSet and a TreeSet?
+ - What is the difference between a Queue and a Deque?
+ - What is the difference between a HashMap and a Hashtable?
+ - Why is the main method declared static in Java?
+ - Does the logic in a static block member of a class run before or after the class's constructor logic is called?
+ - What is a thread in Java?
+ - How can you create a thread in Java?
+ - What are the states of a thread?
+ - What is the difference between the .run() and .start() methods?
+ - What is the keyword "synchronized" used for?
+ - What causes a deadlock?
+ - What is the function of the .join() method?
+ - Describe the characteristics and application of the singleton design pattern
+ - Describe the characteristics and application of the factory design pattern
+ - What is a lambda expression?
+ - What are the differences between a lambda expression and a local anonymous class?
+ - Are lambda expressions replacements to local anonymous classes?
+ - What is a functional interface?
+ - Is the @FunctionalInterface annotation required to denote a functional interface?
+ - What are some examples of functional interfaces?
+ - What are method references? Describe their syntax.
+ - What kinds of methods can be references using method references?
+ - What is a default method, and why should you use them?
+ - When was the java.util.function package introduced?
+ - What are the main types of functional interfaces?
+ - What is the method signature of the abstract method in the Supplier interface?
+ - What is the method signature of the abstract method in the Consumer interface?
+ - How would you go about composing/combining multiple Consumers together?
+ - What is the method signature of the abstract method in the Predicate interface?
+ - What are the default methods of the Predicate interface?
+ - What is the method signature of the abstract method in the Function interface?
+ - What is a BiFunction?
+ - When should you use IntSupplier versus Supplier<Integer>?
+ - What is a Stream and how is it different than a Collection?
+ - What are intermediate Stream operations? Name a few.
+ - What are terminal Stream operations? Name a few.
+ - What is the function of Stream#map, what does it take as a parameter?
+ - What is the function of Stream#filter, what does it take as a parameter?
+ - What is the function of Stream#reduce, what does it take as a parameter?
+ - What is the function of Stream#flatMap, what does it take as a parameter?
+ - Articulate the difference between Stream#map and Stream#flatMap.
+ - Do Stream operations manipulate the collection being streamed?
+ - How can you convert an array into a Stream?
+ - What is an Optional?
+ - What are some ways of making Optional objects, since its constructor is declared as private?
