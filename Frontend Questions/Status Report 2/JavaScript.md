@@ -1,16 +1,12 @@
 # JavaScript
 
-## Language Fundamentals
+1.What is JavaScript? What do we use it for?
 
-### Basic
+2. Can we run JavaScript in a web browser, on a server, or both?
 
-* What is JavaScript? What do we use it for?
+3. What programming paradigm(s) does JS support?
 
-* Can we run JavaScript in a web browser, on a server, or both?
-
-* What programming paradigm(s) does JS support?
-
-* What are the data types in JS?
+4. What are the data types in JS?
 
   * What is the type of NaN? What is the isNaN function?
 
@@ -20,31 +16,31 @@
 
   * What is the difference between undefined and null?
 
-* What are JS objects? what is the syntax?
+5. What are JS objects? what is the syntax?
 
-* Use the object literal syntax to create an object with some properties
+6. Use the object literal syntax to create an object with some properties
 
-* What are arrays in JS? can you change their size?
+7. What are arrays in JS? can you change their size?
 
-* List some array methods and explain how they work.
+8. List some array methods and explain how they work.
 
-* What is JSON? Is it different from JS objects?
+9. What is JSON? Is it different from JS objects?
 
-* What are some ways you can use functions in JS?
+10. What are some ways you can use functions in JS?
 
-* What are the different scopes of variables in JS?
+11. What are the different scopes of variables in JS?
 
   * What are the different ways to declare global variables?
 
   * Is it a best practice to use global variables? Why or why not?
 
-* What are some methods on the function prototype?
+12. What are some methods on the function prototype?
 
-* If you declare a variable `var` inside a for loop is that block scoped or function scoped?
+13. If you declare a variable `var` inside a for loop is that block scoped or function scoped?
 
   * If you declare a variable `let` inside a for loop is that block scoped or function scoped?
 
-* What will happen?
+14. What will happen?
 
 ```javascript
 const hi;
@@ -52,11 +48,11 @@ hi = 3;
 console.log(hi);
 ```
 
-* What are callback functions? What about self-invoking functions?
+15. What are callback functions? What about self-invoking functions?
 
-* What is a truthy or falsy value? List the falsy values.
+16. What is a truthy or falsy value? List the falsy values.
 
-* What prints?:
+17. What prints?:
 
 ```javascript
 let x = 5;
@@ -66,11 +62,11 @@ while(x) {
 }
 ```
 
-* What is the difference between == and ===? Which one allows for type coercion?
+18 What is the difference between == and ===? Which one allows for type coercion?
 
-* What is the difference between `for of` and `for in`? Give examples.
+19. What is the difference between `for of` and `for in`? Give examples.
 
-* What does the following code do?
+20. What does the following code do?
 
 ```javascript
 function addOne(value) {
@@ -97,9 +93,9 @@ changeUsername(user);
 console.log(user.username);
 ```
 
-* What is the difference between a do-while and a while loop?
+19. What is the difference between a do-while and a while loop?
 
-* What does this do?
+20. What does this do?
 
 ```javascript
 for(;;){
@@ -107,12 +103,12 @@ for(;;){
 }
 ```
 
-* What is fall-through with regard to switch statements?
+21. What is fall-through with regard to switch statements?
 
-* What is the difference between `console.log(++x)` and `console.log(x++)`?
+22. What is the difference between `console.log(++x)` and `console.log(x++)`?
 
-* Explain what “strict mode” does   
+23. Explain what “strict mode” does   
 
-* What are the naming conventions for a variable used in JavaScript?
+24. What are the naming conventions for a variable used in JavaScript?
 
-* What are the naming conventions for a function used in JavaScript?
+25. What are the naming conventions for a function used in JavaScript?

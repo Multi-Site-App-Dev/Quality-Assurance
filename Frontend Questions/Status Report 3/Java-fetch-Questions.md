@@ -1,51 +1,52 @@
 
 ### Javascript cont.
 
-* What is function and variable hoisting?
+1. What is function and variable hoisting?
 
-* What is a closure and when should you use it?
+2. What is a closure and when should you use it?
 
-* What does the "this" keyword refer to?
+3. What does the "this" keyword refer to?
 
-* Explain the concept of lexical scope
+4. Explain the concept of lexical scope
 
-* Explain how inheritance works in JS
+5. Explain how inheritance works in JS
 
-* What is the difference between `setInterval()` and `setTimeout()`?
+6. What is the difference between `setInterval()` and `setTimeout()`?
 
-* How would you handle an error in JS?
+7. How would you handle an error in JS?
 
-* What attributes does an Error object have?
+8. What attributes does an Error object have?
 
-* What is an Immediately Invoked Function Expression?
+9. What is an Immediately Invoked Function Expression?
   * How would you write one?
-* What is the DOM? How is it represented as a data structure? What object in a browser environment allows us to interact with the DOM?
 
-* List some ways of querying the DOM for elements
+10. What is the DOM? How is it represented as a data structure? What object in a browser environment allows us to interact with the DOM?
 
-* How would you insert a new element into the DOM?
+11. List some ways of querying the DOM for elements
 
-* What are event listeners? What are some events we can listen for? What are some different ways of setting event listeners?
+12. How would you insert a new element into the DOM?
 
-* What is bubbling and capturing and what is the difference?
+13. What are event listeners? What are some events we can listen for? What are some different ways of setting event listeners?
 
-* What are some methods on the event object and what do they do?
+14. What is bubbling and capturing and what is the difference?
+
+15. What are some methods on the event object and what do they do?
 
 ### Fetch
 
-What is the Fetch API in JavaScript?
+1. What is the Fetch API in JavaScript?
 
-Why is fetch the preferred way to send a network request via the browser?
+2. Why is fetch the preferred way to send a network request via the browser?
 
-How does Fetch handle JSON responses?
+3. How does Fetch handle JSON responses?
 
-How is error handling done in Fetch API?
+4. How is error handling done in Fetch API?
 
-How does Fetch API handle error statuses?
+5. How does Fetch API handle error statuses?
 
-What does the option 'no-cors' mean in Fetch API?
+6. What does the option 'no-cors' mean in Fetch API?
 
-Clarify what the fetch 'mode' option does?
+7. Clarify what the fetch 'mode' option does?
 
 
 
