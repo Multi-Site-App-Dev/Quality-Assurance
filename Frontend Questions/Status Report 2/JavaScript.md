@@ -34,13 +34,12 @@
 
   * Is it a best practice to use global variables? Why or why not?
 
-12. What are some methods on the function prototype?
 
-13. If you declare a variable `var` inside a for loop is that block scoped or function scoped?
+12. If you declare a variable `var` inside a for loop is that block scoped or function scoped?
 
   * If you declare a variable `let` inside a for loop is that block scoped or function scoped?
 
-14. What will happen?
+13. What will happen?
 
 ```javascript
 const hi;
@@ -48,11 +47,11 @@ hi = 3;
 console.log(hi);
 ```
 
-15. What are callback functions? What about self-invoking functions?
+14. What are callback functions? What about self-invoking functions?
 
-16. What is a truthy or falsy value? List the falsy values.
+15. What is a truthy or falsy value? List the falsy values.
 
-17. What prints?:
+16. What prints?:
 
 ```javascript
 let x = 5;
@@ -62,11 +61,11 @@ while(x) {
 }
 ```
 
-18 What is the difference between == and ===? Which one allows for type coercion?
+17. What is the difference between == and ===? Which one allows for type coercion?
 
-19. What is the difference between `for of` and `for in`? Give examples.
+18. What is the difference between `for of` and `for in`? Give examples.
 
-20. What does the following code do?
+19. What does the following code do?
 
 ```javascript
 function addOne(value) {
@@ -93,9 +92,9 @@ changeUsername(user);
 console.log(user.username);
 ```
 
-19. What is the difference between a do-while and a while loop?
+20. What is the difference between a do-while and a while loop?
 
-20. What does this do?
+21. What does this do?
 
 ```javascript
 for(;;){
@@ -103,12 +102,12 @@ for(;;){
 }
 ```
 
-21. What is fall-through with regard to switch statements?
+22. What is fall-through with regard to switch statements?
 
-22. What is the difference between `console.log(++x)` and `console.log(x++)`?
+23. What is the difference between `console.log(++x)` and `console.log(x++)`?
 
-23. Explain what “strict mode” does   
+24. Explain what “strict mode” does   
 
-24. What are the naming conventions for a variable used in JavaScript?
+25. What are the naming conventions for a variable used in JavaScript?
 
-25. What are the naming conventions for a function used in JavaScript?
+26. What are the naming conventions for a function used in JavaScript?

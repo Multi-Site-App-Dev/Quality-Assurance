@@ -60,7 +60,7 @@
 27.  What are the advantages of using RestTemplate?
     
 
-### Spring AOP
+### Spring AOP - More Advanced Topic
 
 28.  What is “aspect-oriented programming”? Define an aspect.
     
